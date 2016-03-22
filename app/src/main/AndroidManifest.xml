@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--이 문서는 xml문서이다 xml 1.0 -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.hs.emirim.qls6521.helloandroid">
+    <!--이 파일은 설정파일이다, xmlns ? 패키지는 클래스들을 관리하기 위해 만든 폴더이며 도메인을 거꾸로 한 것 처럼 생김
+    ns? namespace 나 여기에 xml소스를 넣을건데, 이거 해석할때 이거 쉽게 하려고 앞에 안드로이드를 붙일거야. 그니까
+    앞에 안드로이드:가 붙여있으면 이 주소를 참고해서 해석해줘.-->
+    <!--ic런처? 파일명이다
+    화면하나하나 ? activity 만약 화면이 3개이면 activity가 3개여야함-->
+    <!--액티비티 안드로이드.. 먼저 실행될 화면 정의-->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
